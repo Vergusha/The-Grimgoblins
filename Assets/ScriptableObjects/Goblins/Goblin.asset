@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21eb9bda3ea7c645b83046c730edf2f, type: 3}
+  m_Name: Goblin
+  m_EditorClassIdentifier: 
+  goblinName: "\u0413\u043E\u0431\u043B\u0438\u043D"
+  goblinSprite: {fileID: 2572365745140355499, guid: f5d46db0137c73f408e9433a3b062dfa, type: 3}
+  maxHealth: 10
+  moveSpeed: 2
+  attackPower: 2
+  attackRange: 1
+  detectionRange: 5
+  isRanged: 0
+  isBoss: 0
+  description: 

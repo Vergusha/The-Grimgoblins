@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: f5d46db0137c73f408e9433a3b062dfa
+guid: 9a68e715b2a80114faea3233d623ff09
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2572365745140355499
-    second: goblin_0
+      213: 362259598760317674
+    second: manekensheet_0
+  - first:
+      213: -7193290407293267164
+    second: manekensheet_1
+  - first:
+      213: -4059046017091875982
+    second: manekensheet_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: goblin_0
+      name: manekensheet_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 50
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba159772401e2b320800000000000000
-      internalID: 2572365745140355499
+      spriteID: ae2959c8f21070500800000000000000
+      internalID: 362259598760317674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manekensheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4235f0b7c7c4c2c90800000000000000
+      internalID: -7193290407293267164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manekensheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b4648372f5ba7c0800000000000000
+      internalID: -4059046017091875982
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5eb6163a50b77244199caa5fc01f77a6
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      goblin_0: 2572365745140355499
+      manekensheet_0: 362259598760317674
+      manekensheet_1: -7193290407293267164
+      manekensheet_2: -4059046017091875982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

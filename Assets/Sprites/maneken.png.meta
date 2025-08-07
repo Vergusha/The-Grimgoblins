@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f5d46db0137c73f408e9433a3b062dfa
+guid: 70ef92105a1fa764ea2af909ce6f60df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2572365745140355499
-    second: goblin_0
+      213: 3087444421376125159
+    second: maneken_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: goblin_0
+      name: maneken_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 15
         y: 0
-        width: 50
-        height: 58
+        width: 41
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba159772401e2b320800000000000000
-      internalID: 2572365745140355499
+      spriteID: 7e8a2efd75ec8da20800000000000000
+      internalID: 3087444421376125159
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      goblin_0: 2572365745140355499
+      maneken_0: 3087444421376125159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
