@@ -23,6 +23,9 @@ public class TestScene : MonoBehaviour
 		if (elapsed >= 25 * 60f)
 		{
 			spawningActive = false;
+			EndPanelController panel = FindFirstObjectByType<EndPanelController>();
+			if (panel != null)
+				panel.ShowPanel();
 			return;
 		}
 

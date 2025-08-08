@@ -12,7 +12,6 @@ public class HumanMovement : MonoBehaviour
 	private SpriteRenderer spriteRenderer;
 	private Animator animator;
 	private HealthSystem healthSystem;
-	private bool isAttacking = false;
 	private float moveSpeed;
 	private int hp;
 	private int damage;

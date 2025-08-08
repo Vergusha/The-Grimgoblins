@@ -35,11 +35,21 @@ public class HealthSystem : MonoBehaviour
         isDead = true;
         if (OnDeath != null)
             OnDeath.Invoke();
-        // Для игрока можно не удалять объект, а отключать управление и UI
-        if (gameObject.CompareTag("Player"))
-            gameObject.SetActive(false);
-        else
+
+        if (!gameObject.CompareTag("Player"))
+        {
+            KillCounter counter = FindFirstObjectByType<KillCounter>();
+            if (counter != null)
+                counter.AddKill();
             Destroy(gameObject);
+        }
+        else
+        {
+            EndPanelController panel = FindFirstObjectByType<EndPanelController>();
+            if (panel != null)
+                panel.ShowPanel();
+            gameObject.SetActive(false);
+        }
     }
 
     public int GetCurrentHP()
