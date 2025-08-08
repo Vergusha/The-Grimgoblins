@@ -39,7 +39,7 @@ public class EndPanelController : MonoBehaviour
             timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     // Сохраняем время в выбранный слот
-    SaveManager.Instance.SavePlayTime(currentSaveSlot, elapsed);
+    SaveManagerNamespace.SaveManager.Instance.SavePlayTime(elapsed);
     }
 
     public void RestartLevel()

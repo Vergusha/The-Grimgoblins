@@ -16,6 +16,14 @@ namespace SaveManagerNamespace
         private const int slotCount = 3;
         private SaveData[] saves = new SaveData[slotCount];
         private string[] savePaths;
+        private int currentSlot = 0;
+
+        public void SetCurrentSlot(int slot)
+        {
+            currentSlot = slot;
+        }
+
+        public int GetCurrentSlot() => currentSlot;
 
         private void Awake()
         {
@@ -33,16 +41,18 @@ namespace SaveManagerNamespace
             LoadAllSaves();
         }
 
-    public void NewGame(int slot)
-    {
-        saves[slot] = new SaveData { playTime = 0 };
-        SaveToFile(slot);
-    }
+        public void NewGame(int slot)
+        {
+            saves[slot] = new SaveData { playTime = 0 };
+            SaveToFile(slot);
+            SetCurrentSlot(slot);
+        }
 
-    public void LoadGame(int slot)
-    {
-        LoadFromFile(slot);
-    }
+        public void LoadGame(int slot)
+        {
+            LoadFromFile(slot);
+            SetCurrentSlot(slot);
+        }
 
     public void DeleteSave(int slot)
     {
@@ -51,13 +61,14 @@ namespace SaveManagerNamespace
             File.Delete(savePaths[slot]);
     }
 
-    public void SavePlayTime(int slot, float playTime)
-    {
-        if (saves[slot] == null)
-            saves[slot] = new SaveData();
-        saves[slot].playTime = playTime;
-        SaveToFile(slot);
-    }
+        public void SavePlayTime(float playTime)
+        {
+            int slot = currentSlot;
+            if (saves[slot] == null)
+                saves[slot] = new SaveData();
+            saves[slot].playTime = playTime;
+            SaveToFile(slot);
+        }
 
     public SaveData GetSave(int slot)
     {
